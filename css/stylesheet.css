@@ -23,8 +23,8 @@ body {
 
 /* Navigation constant icons*/
 .constant-icons { 
-    display: flex;
-    gap: 15px;
+    float: right;
+    padding: 20px;
 }
 
 .constant-icons a {
@@ -54,8 +54,7 @@ header {
     position: relative;
     padding: 10px;
     font-size: 1em;
-    z-index: 10;
-    
+    z-index: 10;   
 }
 
 .header-logo {
@@ -92,6 +91,7 @@ nav a {
         border-radius: 5px;
         text-decoration: none;
         box-shadow: 1px 1px 4px grey;
+        
     }
 }
 
@@ -108,7 +108,8 @@ footer {
 footer section {
     flex: 1;
     min-width: 200px;
-    margin: 10px;
+    margin: 5px;
+    padding: 0 10px;
 }
 
 footer section:last-child {
@@ -146,7 +147,7 @@ input {
 }
 
 .logo-footer {
-    height: 100px;
+    height: 150px;
     width: auto;
     color: white;
 }
@@ -265,7 +266,6 @@ input {
     max-width: 1200px;
     margin: 50px auto;
     grid-gap: 20px;
-    border-color: #545F71;
 }
 
 .featured h2 {
@@ -288,7 +288,7 @@ input {
 
 
 .featured img {
-    width: 100%;;
+    width: 100%;
 }
 
 @media (max-width: 600px){
@@ -304,8 +304,6 @@ input {
         text-align: center;
     }
 }
-
-
 
 .products {
     display: grid;
@@ -352,6 +350,154 @@ input {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     }
-
 }
 
+/* Contact Us page */
+.headquarter {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+/* About Us page */
+.about {
+    margin-bottom: 30px;
+}
+
+.about img {
+    width: auto;
+    max-height: 200px;
+}
+
+.about a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Jacket spesific page */
+.product {
+    margin-bottom: 30px;
+}
+
+.product img{
+    width: auto;
+    max-height: 500px;
+}
+
+.cta-size {
+    color: black;
+    background-color: #F5F5F5;
+    padding: 5px 8px;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 1px 1px 4px grey;
+}
+
+.cta-size:clicked {
+    color: black;
+    background-color: #F5F5F5;
+    padding: 5px 8px;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 1px 1px 4px grey;
+    border-color: grey;
+}
+
+/* Product list page */
+
+.image-header {
+    background-image: url(/assets/yellowjacket.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 200px;
+    background-position-x: center;
+    background-position-y: center;
+    position: relative;
+    box-shadow: 2px 2px 5px lightgrey;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.productlist {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    max-width: 1200px;
+    margin: 50px auto;
+    grid-gap: 20px;
+}
+
+.productlist h2 {
+    grid-column: -1/1;
+}
+
+.productlist h3 {
+    grid-column: span 2;
+    margin: 0;
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+.productlist p {
+    grid-column: span 2;
+    margin: 0;
+    padding: 10px;
+    font-size: 1em;
+}
+
+
+.productlist img {
+    width: 100%;
+}
+
+@media (max-width: 600px){
+    .productlist {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2, auto);
+    }
+
+    .productlist .products {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
+/* Checkout Page */
+.cta-checkout {
+    display: inline-block;
+    color: black;
+    background-color: #E8CE5F;
+    padding: 15px 40px;
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 1px 1px 2px lightgrey;
+}
+
+.summary {
+    border-color: black;
+}
+
+.summary img {
+    width: auto;
+    max-height: 200px;
+}
+
+/* Checkout Succeed Page */
+.checkout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.checkout img {
+    margin-top: 100px;
+    height: auto;
+    max-height: 200px;
+}

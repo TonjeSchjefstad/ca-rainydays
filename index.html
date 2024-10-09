@@ -1,18 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Example Title, replace me!</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <meta name="author" content="Tonje Schjefstad">
+    <link href="/css/stylesheet.css" rel="stylesheet">
+    <meta name="keywords" content="rainwear, jackets, online shop">
+   <meta name="description" content="Online shop for rain jackets">
+    <script src="https://kit.fontawesome.com/bbeb57b99e.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" >
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96x96.png" >
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" >
+    <title>Rainy Days - Pushing the Comfort Zone</title>
 </head>
 
-<body class="centered">
-    <div>
-        <img src="/assets/images/noroff-logo.png" alt="Noroff Logo">
-        <h1>Hello World!</h1>
-    </div>
-</body>
+<body>
+    <header>
+        <img src="/assets/logo.png" alt="Logo" class="header-logo">
+        <div class="constant-icons"> 
+            <a href="index.html"><i class="fa-solid fa-user"></i> </a>
+            <a href="index.html"><i class="fa-solid fa-heart"></i></a>
+            <a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+        
+        <input type="checkbox" id="menu-checkbox">
+        <label for="menu-checkbox" class="hamburger-icon"><i class="fa-solid fa-bars"></i></label>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop-men.html">Men</a>
+            <a href="shop-women.html">Women</a>
+            <a href="/about/">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    
+    <main> 
+        <section class="homepage">
+            <div class="welcome-content">
+                <h1>Pushing the comfort Zone</h1>
+                <p>Inspired by the unpredictability of nature, we’ve created a line of rainwear that lets you focus on the thrill of the adventure, not the conditions.</p>
+                <a href="/about/" class="cta">Learn More</a>
+            </div>
+        </section>
+        
+        <section class="featured">
+            <h2>Bestsellers</h2>
+            <div class="products">
+                <a href="jacket.html"><img src="/assets/jacket2.jpg" alt="bestselling jacket"></a>
+                <h3>Rainy Day Jacket</h3>
+                <p>NOK 1.499,-</p>
+            </div>
+            <div class="products">
+                <a href="jacket.html"><img src="/assets/jacket3.jpg" alt="bestselling jacket"></a>
+                <h3>Rainy Day Jacket</h3>
+                <p>NOK 1.499,-</p>
+            </div>
+            <div class="products">
+                <a href="jacket.html"><img src="/assets/jacket4.jpg" alt="bestselling jacket"></a>
+                <h3>Rainy Day Jacket</h3>
+                <p>NOK 1.499,-</p>
+            </div>
+            <div class="products">
+                <a href="jacket.html"><img src="/assets/jacket5.jpg" alt="bestselling jacket"></a>
+                <h3>Rainy Day Jacket</h3>
+                <p>NOK 1.499,-</p>
+            </div>
+        </section>
+        
+        
+        <section class="content">
+            <h2>Zip into Comfort</h2>
+            
+            <p>At RAINY DAYS, we believe that adventure shouldn’t stop when the skies open up. Whether you’re trekking through the forest, canoeing across a misty lake, or skiing down a snow-covered slope, our rain jackets are crafted to keep you dry, comfortable, and ready to embrace the elements.
+            <br><br>
+            Inspired by the unpredictability of nature, we’ve created a line of rainwear that lets you focus on the thrill of the adventure, not the conditions. From the morning mist to the evening downpour, RAINY DAYS has you covered, so you can push further, explore deeper, and stay out longer.
+            <br><br><b>When the forecast calls for rain, zip into comfort with RAINY DAYS and keep your adventure going!</b></p>
+            <img src="/assets/hiker.jpg" alt="Man hiking in the mountain">
+        </section>
+    </main>
 
+    <footer>
+        <div>
+            <img src="/assets/whitelogo.png" alt="Logo and slogan for Rainy Days" class="logo-footer">
+        </div>
+        <section>
+            <h4>Shop</h4>
+                <ul>
+                    <li><a href="shop-men.html">Men</a></li>
+                    <li><a href="shop-men.html">Women</a></li>
+                    <li><a href="shop-men.html">Gift Card</a></li>
+                </ul>
+        </section>
+        <section>
+            <h4>Help</h4>
+                <ul>
+                    <li><a href="shop-men.html">About Us</a></li>
+                    <li><a href="shop-men.html">Contact Us</a></li>
+                    <li><a href="shop-men.html">Order Status</a></li>
+                    <li><a href="shop-men.html">Size Chart</a></li>
+                </ul>
+        </section>
+        <section>
+            <h4> Follow Us </h4>
+            <a href="index.html"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
+            <a href="index.html"><i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i></a>
+            <a href="index.html"><i class="fa-brands fa-instagram" style="color: white;"></i></a>
+            <a href="index.html"><i class="fa-brands fa-tiktok" style="color: #ffffff;"></i></a>
+        </section>
+        <section>
+            <h4> Stay updated with RAINY DAYS</h4>
+            <p>Sign up for our newsletter and get 10% off your next purchase.</p>
+            <form>
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="your@email.com">
+                <button class="subscribe"><i class="fa-solid fa-paper-plane" style="color: grey;"></i></button>
+            </form>
+        </section>
+    </footer>
+</body>
 </html>
