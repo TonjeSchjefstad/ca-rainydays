@@ -34,38 +34,47 @@
         </nav>
     </header>
     <main>
-        <section>
-            <h1>Contact Us</h1>
-            <p>Have a question or need help with your order? We're here to assist!</p> 
-            <p>Reach out to our team, and we'll get back to you as soon as possible.</p>
-            <p>We look forward to hearing from you!</p>
-            <form method="post">
-                <label for="firstname">First Name</label>
-                <input type="text" id="firstname" name="firstname">
-                <label for="lastname">Last Name</label>
-                <input type="text" id="lastname" name="lastname">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email">
-                <label for="phone">Phone</label>
-                <input type="tel" id="phone" name="phone">
-                <label for="topic">Topic</label>
-                <input type="text" id="topic" name="topic">
-                <label for="message">Message </label>
-                <textarea name="message" id="message"></textarea>   
-                <input type="Submit" value="Submit" class="cta">
+    <div class="contact">
+        <h1>Contact Us</h1>
+        <p>Have a question or need help with your order? We're here to assist! Reach out to our team, and we'll get back to you as soon as possible.</p> 
+        <p>We look forward to hearing from you!</p>
+            
+        <div class="contact-container">
+            <form method="post" class="contact-form">
+                <div class="form-wrapper">
+                    <section>
+                        <label for="firstname">First Name</label>
+                        <input type="text" id="firstname" name="firstname" required>
+                        <label for="lastname">Last Name</label>
+                        <input type="text" id="lastname" name="lastname" required>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" required>
+                        <label for="topic">Topic</label>
+                        <input type="text" id="topic" name="topic">
+                        <label for="message">Message </label>
+                        <textarea name="message" id="message" style="height: 10em;"></textarea>   
+                    </section>
+                    <input type="Submit" value="Submit" class="cta-contact">
+                </div>
             </form>
-        </section>
-        <section>
-            <h4>RAINY DAYS HQ</h4>
-            <p>123 Explorer's Way</p>
-            <p>Summit Peak Industrial Park</p>
-            <p>Evergreen City, OR 97845</p>
-            <p>United States</p> <br>
-            <p>Email: support@rainydays.com</p>
-            <p>Phone: +47 123 45 678</p>
-        </section>
-        <img src="assets/headquarter.jfif" alt="Picture of Rainy Days headquarter" class="headquarter">
+            
+            <div class="contact-info-container">
+                <section class="contact-info">
+                    <h4>RAINY DAYS HQ</h4>
+                    <p>123 Explorer's Way</p>
+                    <p>Summit Peak Industrial Park</p>
+                    <p>Evergreen City, OR 97845</p>
+                    <p>United States</p> 
+                    <p><b>Email: support@rainydays.com</b></p>
+                    <p><b> +47 123 45 678</b></p>
+                </section>
+                <img src="assets/headquarter.jfif" alt="Picture of Rainy Days headquarter" class="headquarter">
+            </div>
+        </div>
     </main>
+    
     <footer>
         <div>
             <img src="/assets/whitelogo.png" alt="Logo and slogan for Rainy Days" class="logo-footer">
