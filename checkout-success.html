@@ -6,36 +6,58 @@
     <meta name="author" content="Tonje Schjefstad">
     <link href="/css/stylesheet.css" rel="stylesheet">
     <meta name="keywords" content="rainwear, jackets, online shop">
-   <meta name="description" content="Online shop for rain jackets">
+   <meta name="description" content="Final checkout page for the online shop Rainy Days">
     <script src="https://kit.fontawesome.com/bbeb57b99e.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" >
     <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96x96.png" >
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" >
-    <title>Rainy Days - Pushing the Comfort Zone</title>
+    <title>Rainy Days - Checkout</title>
 </head>
 
 <body>
     <header>
-        <a href="jacket.html"><img src="/assets/logo.png" alt="Logo" class="header-logo"></a>
-        <div class="constant-icons"> 
-            <a href="index.html"><i class="fa-solid fa-user"></i> </a>
-            <a href="index.html"><i class="fa-solid fa-heart"></i></a>
-            <a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        <div>
+            <a href="index.html"><img src="/assets/logo.png" alt="Logo" class="header-logo"></a>
         </div>
-        
-        <input type="checkbox" id="menu-checkbox">
-        <label for="menu-checkbox" class="hamburger-icon"><i class="fa-solid fa-bars"></i></label>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="shop-men.html">Men</a>
-            <a href="shop-women.html">Women</a>
-            <a href="/about/">About Us</a>
-            <a href="contact.html">Contact Us</a>
-        </nav>
+
+        <div class="header-right">
+            <div class="constant-icons"> 
+                <a href="index.html"><i class="fa-solid fa-user"></i> </a>
+                <a href="index.html"><i class="fa-solid fa-heart"></i></a>
+                <a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            
+            <div class="header-nav">
+                <input type="checkbox" id="menu-checkbox">
+                <label for="menu-checkbox" class="hamburger-icon"><i class="fa-solid fa-bars"></i></label>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="shop-men.html">Men</a>
+                    <a href="shop-women.html">Women</a>
+                    <a href="/about/">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                </nav>
+            </div>
+        </div>
     </header>
     
-
     <main>
+        <div class="progress">
+            <ul class="progress-list">
+                <li class="progress-item">
+                    <span class="progress-count">1</span>
+                    <span class="progress-label">Checkout</span>
+                </li>
+                <li class="progress-item">
+                    <span class="progress-count">2</span>
+                    <span class="progress-label">Shipping</span>
+                </li>
+                <li class="progress-item">
+                    <span class="progress-count">3</span>
+                    <span class="progress-label">Success</span>
+                </li>
+            </ul>
+        </div>
         <div class="checkout">
             <img src="assets/checkmark.png" alt="Checkout complete">
         </div>
