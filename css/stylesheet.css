@@ -269,7 +269,7 @@ input {
 
 /* Index Page */
 .homepage {
-    background-image: url(/assets/twomen.jpg);
+    background-image: url(/assets/twomen.webp);
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 430px;
@@ -364,12 +364,9 @@ input {
     box-shadow: 1px 1px 4px lightgray;
     padding: 10px;
 }
-.products:hover {
-    display: grid;
-    grid-template-columns: 1fr auto;    
+.products:hover { 
     border: 1px solid #8b8b8b;
     box-shadow: 1px 1px 4px rgb(158, 158, 158);
-    padding: 10px;
 }
 .products {
     text-align: center;
@@ -577,7 +574,6 @@ textarea {
     padding: 20px;
 }
 .product-image img {
-    max-width: 100%;
     max-width: 500px;
     height: auto;
     padding: 40px;
@@ -623,8 +619,7 @@ textarea {
 .heart-container {
     background-color: rgb(241, 241, 241);
     border-radius: 20px;
-    border: 1px solid #b8b8b8;
-    box-shadow: 1px 1px 1px grey;
+    border: 1px solid #b8b8b8;                  
     width: 40px;
     height: 40px;
     text-align: center;
@@ -678,21 +673,20 @@ textarea {
 }
 
 /* Checkout Page */
+
 .summary {
-    grid-column: 1/-1;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: repeat(5, 1fr); 
     max-width: 1300px;
+    gap: 20px;
     border: 1px solid lightgrey;
     border-radius: 5px;
     padding: 20px;
     background-color: rgb(252, 252, 252);
     margin-bottom: 30px;
 }
-.summary {
-    display: grid;
-    grid-template-rows: auto 1fr;
-    grid-template-columns: repeat(5, 1fr); 
-    gap: 20px;
-}
+
 .summary-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -700,13 +694,7 @@ textarea {
     gap: 20px;
     max-width: 1380px;
 }
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: auto;
-    gap: 10px;
-    width: 100%;
-}
+
 @media (max-width:600px) {
     .summary,
     .summary-container {
@@ -829,7 +817,7 @@ textarea {
 .delete-button {
     font-size: 1em;
     background-color: white;
-    color: red;
+    color: rgb(146, 0, 0);
     border: 1px solid grey;
     box-shadow: 1px 1px 2px lightgrey;
     padding: 10px 15px;
