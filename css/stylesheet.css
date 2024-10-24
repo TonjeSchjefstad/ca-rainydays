@@ -269,7 +269,7 @@ input {
 
 /* Index Page */
 .homepage {
-    background-image: url(./assets/twomen.webp);
+    background-image: url(../assets/twomen.webp);
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 430px;
@@ -642,7 +642,7 @@ textarea {
 
 /* Product list page */
 .image-men {
-    background-image: url(/assets/yellowjacket.jpg);
+    background-image: url(../assets/yellowjacket.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 400px;
@@ -654,7 +654,7 @@ textarea {
     padding: 20px;
 }
 .image-women {
-    background-image: url(/assets/ladyinyellow2.jpg );
+    background-image: url(../assets/ladyinyellow2.jpg );
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 400px;
