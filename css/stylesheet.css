@@ -15,7 +15,10 @@ body {
     font-family: 'lato', Verdana, Tahoma, sans-serif;
     margin: 20px;
 }
-
+main {
+    max-width: 1600px;
+    margin: 0 auto;
+}
 /* Navigation constant icons*/
 .constant-icons { 
     display: flex;
