@@ -906,7 +906,7 @@ textarea {
     content: "";
     height: 40px;
     width: 40px;
-    background: rgb(27, 94, 27);
+    background: rgb(19, 66, 19);
     position: absolute;
     left: 50%;
     top: 50%;
@@ -940,14 +940,14 @@ textarea {
     width: 10px;
 }
 .current-item ~ .progress-item .progress-label {
-    opacity: 0.5;
+    opacity: 0.8;
 }
 .current-item .progress-count:after {
     background: white;
-    border: 2px solid rgb(27, 94, 27);
+    border: 2px solid  rgb(27, 94, 27);
 }
 .current-item .progress-count {
-    color: rgb(27, 94, 27);
+    color:  rgb(27, 94, 27);
 }
 
 /* Checkout Succeed Page */
