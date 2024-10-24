@@ -269,7 +269,7 @@ input {
 
 /* Index Page */
 .homepage {
-    background-image: url(/assets/twomen.webp);
+    background-image: url(./assets/twomen.webp);
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 430px;
